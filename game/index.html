@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koti</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="start-screen">
+      <h1 class="main-title">kot mit javascript</h1>
+      <p class="instructions">
+        Der Kothaufen muss zur Toilette gebracht werden!<br>
+        Sammle auf dem Weg so viele Fliegen wie möglich ein
+      </p>
+      <p class="instructions">
+        Mit den Pfeiltasten bewegen.
+      </p>
+      <p class="instructions">Mit der Leertaste springen.<br><br>
+      Funktioniert derzeit noch NICHT auf Mobilegeräten!</p>
+
+      <div class="btn-container">
+        <a href="../index.html"> <button class ="btn" id="back-btn" title="Zurück zur Website">← Zurück</button></a>
+        <button class="btn" id="start-btn">Start</button>
+      </div>
+    </div>
+    <!-- Score-Bereich -->
+    <div class="score">
+      <p>Fliegen eingesammelt: <span id="flies-collected">0</span>/<span id="total-flies">20</span></p>
+    </div>
+    <!-- Checkpoint-Bereich -->
+    <div class="checkpoint-screen">
+      <h2>Gratuliere</h2>
+      <p>Dein Kothaufen hat die Toilette erreicht!</p>
+    </div>
+    <a href="index.html"> <button id="backtoWebsiteBtn" title="Zurück zur Website">zurück zum Start ←</button></a>
+    <canvas id="canvas"></canvas>
+    <script src="./script.js"></script>
+  </body>
+</html>
