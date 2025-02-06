@@ -8,17 +8,29 @@
 </head>
 <body>
     <!-- Navigationsleiste -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo">
-        </div>
+<nav class="navbar">
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <!-- Hamburger-Menü -->
+    <div class="hamburger-menu" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="nav-links" id="nav-links">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">Über mich</a></li>
             <li><a href="#projects">Meine Projekte</a></li>
             <li><a href="#certificates">Zertifikate</a></li>
+            <li><a href="./Cloud/index.html">Cloud</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- Hauptinhalt mit begrenzter Breite -->
     <div class="container">
@@ -37,14 +49,18 @@
         <!-- Über mich-Bereich -->
         <section id="about" class="about-section">
             <h2>Über mich</h2>
-            <p>Hier ist eine kurze Beschreibung über mich und meine Fähigkeiten.<br>
-                Inhalt folgt.. <br><br>
+            <p>Hier ist eine kurze Beschreibung über mich und meine Fähigkeiten.<br><br>
+                Hobbys:<br>
+                Sport, Kreatives, Gaming <br><br>
+                Kenntnisse:<br>
+                HTML, CSS, Javascript, C# und Python<br><br>
+                Weiterer Inhalt folgt.. <br><br>
             Links zu meinem Github Profil als auch zu meinem Youtubekanal, welcher aber seit langem nicht mehr aktiv betrieben wird.</p>
             <div class="social-links">
-                <a href="https://github.com" target="_blank" class="social-icon github">
+                <a href="https://github.com/Flowdi" target="_blank">
                     <img src="images/github.png" alt="GitHub">
                 </a>
-                <a href="https://youtube.com" target="_blank" class="social-icon youtube">
+                <a href="https://www.youtube.com/@flowditv5565" target="_blank">
                     <img src="images/youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -53,7 +69,8 @@
         <!-- Projekt Bereich -->
         <section id="projects">
             <h2>Meine Projekte</h2>
-            <p>Hier ist eine Auflistung meiner bisherigen eigenen Projekte</p>
+            <p>Hier ist eine Auflistung meiner bisherigen Projekte. <br>
+            Für weitere Infos klicken</p>
             <div class="container2">
                 <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                     <!-- Project Card 1 - Messenger -->
@@ -65,7 +82,7 @@
                             </svg>
                         </div>
                         <h2 class="text-xl font-semibold mb-2">Messenger</h2>
-                        <p class="text-gray-400">Noch in Bearbeitung.<br>Eine eigene Messaging-App, mit eigenem Server, welche auf Desktop und Smartphone läuft.</p>
+                        <p class="text-gray-400">Noch in Bearbeitung.<br>Eine eigene Messaging-App, mit eigenem Server, welche auf Desktop und Smartphone laufen soll.</p>
                     </div>
 
                     <!-- Project Card 2 - KotSpiel -->
@@ -80,7 +97,7 @@
                             </svg>
                         </div>
                         <h2 class="text-xl font-semibold mb-2">Kotspiel</h2>
-                        <p class="text-gray-400">Mein erstes Spiel.<br>Ein Platformer-Game mit JavaScript programmiert. Fertiggestellt am 21. Oktober 2024.<br>
+                        <p class="text-gray-400">Mein erstes eigenes Spiel.<br>Ein Platformer-Game, programmiert mit JavaScript. <br> Fertiggestellt am 21. Oktober 2024.<br> Kleine Updates mit neuen Features folgen.<br>
                             <a href="game/index.html" class="projekt-button">Zum 'Kot'-Spiel</a>
                         </p>
                     </div>
@@ -94,7 +111,9 @@
                             </svg>
                         </div>
                         <h2 class="text-xl font-semibold mb-2">Website</h2>
-                        <p class="text-gray-400">Mein erstes Projekt war es diese Website zu erstellen</p>
+                        <p class="text-gray-400">Mein erstes Projekt war es diese Website zu erstellen.<br>
+                        Nach einem ursprünglich anderen Design und Aufbau habe ich mich nun für das aktuelle entschieden.<br>
+                    </p>
                     </div>
                 </div>
             </div>
@@ -103,7 +122,7 @@
         <!-- Zertifikat Bereich -->
         <section id="certificates">
             <h3>Zertifikate</h3>
-            <p>Hier sind meine bisher erlangten Zertifikate aus dem Programmierbereich</p>
+            <p>Hier sind meine bisher erlangten Zertifikate aus dem Programmier- und Webdevelopment Bereich</p>
             <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                 <!-- Zertifikat-Karte 1 -->
                 <div class="project-card">
@@ -125,6 +144,7 @@
             </div>
         </section>
     </div>
+    <button id="scrollToTopBtn" title="Nach oben scrollen">↑</button>
     <script src="script.js"></script>
 </body>
 </html>
