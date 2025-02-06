@@ -1,0 +1,88 @@
+/* Basis-Styles */
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Matrix-Canvas */
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Hinter den Login-Bereich */
+}
+
+/* Login-Container */
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(255, 0, 0);
+  text-align: center;
+}
+
+/* Eingabefelder */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Login-Button */
+#sendlogin {
+  width: 93%;
+  padding: 10px;
+  background: rgb(128, 0, 0);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(#6c1111, #f53e3e, #6c1111);
+box-shadow: 0 0 20px 0 #7e2020cc;
+border-radius: 5px;
+}
+
+#sendlogin:hover {
+  text-decoration: underline;
+background: linear-gradient(#6c1111, #fc1616, #6d0b0b);
+box-shadow: 0 0 10px 0 #7e2020cc;
+border-radius: 5px;
+color: rgb(255, 255, 255);
+}
+
+/* Fehlernachricht */
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+#backtoWebsiteBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
+
+#backtoWebsiteBtn:hover {
+  background-color: #555;
+}
