@@ -1,0 +1,168 @@
+/* Grundstil */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --main-bg-color: #817676;
+    --section-bg-color: #1e1e1e;
+    --golden-yellow: #feac32;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Verhindert Scrollen */
+    width: 100%;
+    height: 100%;
+}
+  body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #494747; /* Dezentes Braun für den Hintergrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .start-screen {
+    background-color: var(--section-bg-color);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgb(168, 69, 69);
+    padding: 20px;
+    padding-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(196, 196, 196);
+  }
+  
+  .main-title {
+    text-align: center;
+  }
+  
+  .instructions {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 15px;
+    line-height: 2rem;
+  }
+  
+  .btn {
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+    color: #fefeff;
+    font-size: 18px;
+    background-color: #e53e3eb9;
+    border-color: rgb(110, 44, 44);
+    border-width: 3px;
+  }
+  
+  .btn:hover {
+    background-image: linear-gradient(#ffcc4c, #f89808);
+  }
+  
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .checkpoint-screen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    background-color: var(--section-bg-color);
+    border-radius: 20px;
+    padding: 10px;
+    display: none;
+    color: white;
+  }
+  
+  .score {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1000; /* Immer über dem Spielfeld sichtbar */
+    text-align: center;
+  }
+
+  #canvas {
+    display: block;
+    width: 100vw; /* Volle Breite des Viewports */
+    height: 100vh; /* Volle Höhe des Viewports */
+  }
+  
+  @media (min-width: 768px) {
+    .start-screen {
+      width: 60%;
+      max-width: 700px;
+    }
+  
+    .checkpoint-screen {
+      max-width: 300px;
+    }
+  }
+
+  /* Scroll to Top Button */
+
+#backtoWebsiteBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
+
+#backtoWebsiteBtn:hover {
+  background-color: #555;
+}
+
+.btn2 {
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+  color: #fefeff;
+  font-size: 18px;
+  background-color: #e53e3eb9;
+  border-color: rgb(110, 44, 44);
+  border-width: 3px;
+}
+
+.btn2:hover {
+  background-image: linear-gradient(#ffcc4c, #f89808);
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
