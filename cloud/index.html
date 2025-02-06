@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Canvas für den Matrix-Effekt -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- Login-Container -->
+  <div class="login-container">
+    <h2>Login zur privaten Cloud</h2>
+    <form id="loginForm">
+      <label for="username">Benutzername:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Passwort:</label>
+      <input type="password" id="password" required>
+
+      <button id="sendlogin" type="submit">Einloggen</button>
+    </form>
+    <p id="error-message" class="error"></p>
+  </div>
+  <a href="../index.html"> <button id="backtoWebsiteBtn" title="Zurück zur Website">← Zurück</button></a>
+  <script src="matrix.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
